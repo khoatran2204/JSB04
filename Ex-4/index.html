@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+</head>
+<body>
+    <div class="header">
+        <!-- begin nav-->
+        <ul class="nav">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Band">Band</a></li>
+            <li><a href="#Member">Member</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <!-- end nav-->
+        <div class="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="slider" id="Home">
+        <img src="/Ex-4/image/img_ch.jpg" alt="" class="slides">
+        <img src="/Ex-4/image/img_la.jpg" alt="" class="slides">
+        <img src="/Ex-4/image/img_ny.jpg" alt="" class="slides">
+        
+        <script>
+            w3.slideshow(".slides",1500)
+        </script>
+    </div>
+
+    <div class="container" id="Band">
+        <div class="section-content">
+        <h2 class="section-heading">THE BAND</h2>
+        <p class="subheading">We love music</p>
+        <p class="text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+        <!--.members-list>.members-item*3>p.members-name*1img.members-img-->
+        <div class="members-list" id="Member">
+            <div class="members-item">
+                <p class="members-name">Name</p>
+                <img src="/Ex-4/image/img_bandmember.jpg" alt="" class="members-img">
+            </div>
+            <div class="members-item">
+                <p class="members-name">Name</p>
+                <img src="/Ex-4/image/img_bandmember.jpg" alt="" class="members-img">
+            </div>
+            <div class="members-item">
+                <p class="members-name">Name</p>
+                <img src="/Ex-4/image/img_bandmember.jpg" alt="" class="members-img">
+            </div>
+        </div>
+
+
+        <div class="section-content center" id="Contact">
+            <h2 class="section-heading">CONTACT</h2>
+            <p>Chicago,US</p>
+            <p>Phone: +00 151515</p>
+            <p>Emai: mai@gmail.com</p>
+            <p class="subheading">Fan? Drop a note</p>
+            <form action="">
+                <input type="text" class="input" placeholder="Name" required name="Name">
+                <input type="text" class="input" placeholder="Email" required name="Email">
+                <input type="text" class="input" placeholder="Message" required name="Message">
+                <button class="button">SEND</button>
+            </form>
+        </div>
+        <img class="container-map" src="./image/map.jpg" alt="">
+    </div>
+
+    <div class="footer">
+        <p>Powere by </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.navigation-container{
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: brown;
+    width: 200px;
+    height: 700px;
+    align-items: center;
+}
+.header-container{
+    flex-flow: row nowrap; 
+    background-color: blueviolet;
+    width: 1200px;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+.article-container{
+    flex-flow: row nowrap; 
+    background-color: aqua;
+    width: 1000px;
+    height: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+.aside-container{
+    flex-flow: column nowrap; 
+    background-color: yellow;
+    width: 200px;
+    height: 500px;
+    align-items: left;
+    justify-content: space-between;
+}
+.footer-container{
+    flex-flow: column nowrap; 
+    background-color: rebeccapurple;
+    width: 1000px;
+    height: 200px;
+    align-items: left;
+    justify-content: space-between;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+}
+

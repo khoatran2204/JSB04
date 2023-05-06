@@ -1,0 +1,33 @@
+
+        .navigation-container{
+            width: 200px;
+            height: 700px;
+            display:flex;
+            align-items: center ;
+            justify-content: space-between;
+            background-color: green;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .navigation-item{
+            background-color: red;
+            margin: 10px;
+            padding: 10px;
+            height: 100px;
+            width: 100px;
+        }
+
+        .header-container{
+            flex-direction: row;
+            width: auto;
+            display: flex;
+            background-color: aqua;
+            flex-wrap: wrap;
+        }
+        .header-item{
+            background-color: aliceblue;
+            margin: 10px;
+            padding: 10px;
+            height: 100px;
+            width: 100px;
+        }
