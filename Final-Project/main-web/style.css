@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    /*di chuyen den noi chi dinh*/
+}
+
+.header{
+    height:46px;
+    background-color: #6887ec;
+    position: fixed;
+    width: 100%;
+}
+
+.nav{
+    display: inline-block;
+}
+
+
+.nav li{
+    display: inline-block;
+}
+
+.nav li a{
+    display: inline-block;
+    /*toàn bộ khối*/
+    color:rgb(255, 255, 255) ;
+    text-transform: uppercase;
+    /*chữ viết hoa*/
+    text-decoration: none;
+    /*bỏ gạch chân*/
+    padding: 0px 24px;
+    line-height: 46px;
+}  
+
+.nav li a:hover{
+    background-color:rgba(255, 255, 255, 0.486);
+    color: #6887ec;
+}
+
+.search{
+    display: inline-block;
+    color: white;
+    float: right;
+    line-height: 46px;
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+.search-input{
+    display: inline-block;
+    float: right;
+    line-height: 40px;
+    padding: 0px 20px;
+    font-size: 20px;
+    border: none;
+}
+
+.search:hover{
+    background-color: rgb(214, 95, 95);
+    cursor: pointer;
+}
+
+.login-signup{
+    display: inline-block;
+    float: right;
+    line-height: 46px;
+    padding: 0px 20px;
+    font-size: 15px;
+}
+
+.login-signup a{
+    color: aliceblue;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+}
+
+.section-heading{
+    text-align: center;
+    padding-bottom: 20px;
+    letter-spacing: 4px;   
+}
+
+
+
+.feedback{
+    display: flex;  
+    width: 75%;
+    height: 200px;
+    padding: 40px;
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 10px ;
+    margin: 10px 150px;
+}
+
+.input{
+    border: none;
+    border-bottom: 2px solid grey;
+    display: block;
+    flex-direction: column;
+    padding: 8px;
+    width: 100%;
+}
+
+
+.feedback-input{
+    background-color: rgb(206, 204, 204);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px ;
+    width: 50%;
+
+}
+
