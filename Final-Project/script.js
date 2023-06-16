@@ -8,14 +8,15 @@ function CheckInfo() {
     if (username.value == "" || username.value == null || pv.value == "" || pv.value == null){
         alert("Bạn cần điền tất cả các mục")
     }
-    else if (username.value == usernameright && pv.value == passwordright ){
-        alert("Đúng");
-    }
-    else {
-        alert("Sai email hoặc mật khẩu");
+else if (username.value != usernameright || pv.value != passwordright ){
+        alert("Sai email hoặc password")
     }
 }
 
-let a = document.getElementById("login-button").addEventListener("click",CheckInfo);
+    if(username.value == usernameright && pv.value == passwordright){
+        window.location = "main-web.html"; 
+    } 
+        
 
+let a = document.getElementById("login-button").addEventListener("click",test);
 

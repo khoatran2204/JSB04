@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    /*di chuyen den noi chi dinh*/
+}
+
+
+.body-login {
+    background-image: url(image/image.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;   
+    align-items: center;
+    
+}
+
+.body_login{
+    background-color: rgba(255, 255, 255, 0.685);
+    width: 500px;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body_login h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.body_login button{
+    width: 100%;
+}
+
+.body_login input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.sub{
+    color: rgb(214, 95, 95);
+}
+
+.action{
+    margin-top: 40px ;
+}
+
+.input-field{
+    border: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee;
+    font: inherit;
+    font-size: 1.125rem;
+    padding: .25rem 0;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 1.5rem;
+}
+
+
+.action-button {
+	font: inherit;
+	font-size: 20px ;
+	padding: 10px;
+	width: 100%;
+	font-weight: 200;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+    margin-bottom: 10px;
+}
+
+.action-button:hover{
+    background-color: #6658d3af;
+}
+
+.input-label{
+    color:#777f85;
+    position: absolute;
+    top: 0.25rem;
+    transition: .25s ease;
+}
+
+.radio-opt{
+    color:#777f85;
+    margin: 0 10px;
+}
+
+.input-radio{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-top: 1.5rem;
+}
+
+.radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.link{
+    display: inline;
+}
+
+
+.header{
+    height:46px;
+    background-color: #6887ec;
+    position: fixed;
+    width: 100%;
+}
+
+.nav{
+    display: inline-block;
+}
+
+
+.nav li{
+    display: inline-block;
+}
+
+.nav li a{
+    display: inline-block;
+    /*toàn bộ khối*/
+    color:rgb(255, 255, 255) ;
+    text-transform: uppercase;
+    /*chữ viết hoa*/
+    text-decoration: none;
+    /*bỏ gạch chân*/
+    padding: 0px 24px;
+    line-height: 46px;
+}  
+
+.nav li a:hover{
+    background-color:rgba(255, 255, 255, 0.486);
+    color: #6887ec;
+}
+
+.search{
+    display: inline-block;
+    color: white;
+    float: right;
+    line-height: 46px;
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+.search-input{
+    display: inline-block;
+    float: right;
+    line-height: 40px;
+    padding: 0px 20px;
+    font-size: 20px;
+    border: none;
+}
+
+.search:hover{
+    background-color: rgb(214, 95, 95);
+    cursor: pointer;
+}
+
+.login-signup{
+    display: inline-block;
+    float: right;
+    line-height: 46px;
+    padding: 0px 20px;
+    font-size: 15px;
+}
+
+.login-signup a{
+    color: aliceblue;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slider{
+    display: flex;
+    justify-content: center;
+}
+
+.section-heading{
+    text-align: center;
+    padding-bottom: 20px;
+    letter-spacing: 4px;   
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    margin: 60px 0px 0px 0px;
+    background-image: url(image/rừng.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+    z-index: -2;
+    
+}
+
+.transbox{
+    display: flex;
+    flex-direction: row;
+    font-size:25px;
+    background-color:#ddddddb7;
+    padding: 40px 0px;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    z-index: -1;
+}
+
+.card{
+    width: 350px;
+    height: 500px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.face{
+    position: absolute;
+    backface-visibility: hidden; 
+}
+
+.container-3d{
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    margin: 20px;
+    perspective: 600px;
+}
+
+
+.card-text{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+}
+ 
+
+.back {
+    transform: rotateY(180deg);
+    text-align: center;
+    background-color: #eb1c1c;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+#tphcm{
+    background-image: url(image/tphcm_.jpeg) ;
+}
+
+#halong{
+    background-image: url(image/Halong.jpg) ;
+}
+
+#dalat{
+    background-image: url(image/Dalat.jpeg) ;
+}
+
+
+
+
+.feedback{
+    display: flex;  
+    width: 75%;
+    height: fit-content;
+    padding: 40px;
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 10px ;
+    margin: 20px;
+}
+
+.input-feedback{
+    border: none;
+    border-bottom: 2px solid grey;
+    display: block;
+    flex-direction: column;
+    padding: 8px;
+    width: 100%;
+}
+
+
+.feedback-input{
+    width: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.button-feedback{
+    margin-top: 15px;
+    padding: 2px 25px;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+.button-feedback:hover{
+    background-color: rgba(128, 128, 128, 0.24);
+}
