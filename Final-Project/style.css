@@ -127,6 +127,10 @@ html {
     background-color: #6887ec;
     position: fixed;
     width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .nav{
@@ -140,7 +144,6 @@ html {
 
 .nav li a{
     display: inline-block;
-    /*toàn bộ khối*/
     color:rgb(255, 255, 255) ;
     text-transform: uppercase;
     /*chữ viết hoa*/
@@ -154,6 +157,7 @@ html {
     background-color:rgba(255, 255, 255, 0.486);
     color: #6887ec;
 }
+
 
 .search{
     display: inline-block;
@@ -201,6 +205,14 @@ html {
 .slider{
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 600px;
+}
+
+.slides{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .section-heading{
@@ -209,60 +221,67 @@ html {
     letter-spacing: 4px;   
 }
 
+.text{
+    margin: 40px 0px;
+}
+
+
 .box{
-    display: flex;
-    flex-direction: row;
-    margin: 60px 0px 0px 0px;
+    margin-top: 80px;
     background-image: url(image/rừng.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    justify-content: center;
-    z-index: -2;
-    
+    text-align: center;
 }
 
 .transbox{
+    background-color:#dddddd91;
+    padding: 60px 0px;
+    width: 100%;
+    height: 620px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center;
+}
+
+.flip-card{
     display: flex;
     flex-direction: row;
-    font-size:25px;
-    background-color:#ddddddb7;
-    padding: 40px 0px;
-    justify-content: center;
-    width: 100%;
-    position: sticky;
-    z-index: -1;
+}
+
+.container-3d{
+    width: 400px;
+    height: 550px;
+    perspective: 600px;
 }
 
 .card{
     width: 350px;
     height: 500px;
-    transition: transform 0.3s ease-in-out;
     position: relative;
     cursor: pointer;
     display: inline-block;
+    transform-style: preserve-3d;
+    transform: translateZ(0.01px);  
+    transition: transform 0.8s;
+}
+
+.card div {
+    width: 350px;
+    height: 500px;
+    position: absolute;
 }
 
 .card:hover {
     transform: rotateY(180deg);
 }
 
-.face{
-    position: absolute;
-    backface-visibility: hidden; 
-}
 
-.container-3d{
-    width: 350px;
-    height: 500px;
-    border-radius: 15px;
-    margin: 20px;
-    perspective: 600px;
-}
-
-
-.card-text{
+.front{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -272,11 +291,16 @@ html {
     border-radius: 15px;
 }
  
+.face{
+    width: 350px;
+    height: 500px;
+    backface-visibility: hidden;
+}
 
 .back {
     transform: rotateY(180deg);
     text-align: center;
-    background-color: #eb1c1c;
+    background-color: #37129c;
     width: 350px;
     height: 500px;
     border-radius: 15px;
@@ -294,7 +318,85 @@ html {
     background-image: url(image/Dalat.jpeg) ;
 }
 
+.ticket{
+    margin-bottom: 80px;
+    background-image: url(image/sunset.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
 
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.t-box{
+    width: 300px;
+    height: 350px;
+    background-color: #eee;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticket-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    background-blend-mode: darken, luminosity;
+}
+
+.ticket-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.ticket-text h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.ticket-text h4:hover{
+    color: #37129c;
+}
+
+.ticket-text p{
+    margin-top: 20px;
+}
+
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle{
+    text-align: center;
+}
+
+.reason{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.list{
+    width: 200px;
+    margin: 15px;
+}
 
 
 .feedback{
@@ -308,7 +410,8 @@ html {
     align-items: center;
     border: 2px solid grey;
     border-radius: 10px ;
-    margin: 20px;
+    margin: 60px 20px;
+    
 }
 
 .input-feedback{

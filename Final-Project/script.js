@@ -13,10 +13,10 @@ else if (username.value != usernameright || pv.value != passwordright ){
     }
 }
 
+function Check(){
     if(username.value == usernameright && pv.value == passwordright){
-        window.location = "main-web.html"; 
+        window.location.replace(main-web.html)
     } 
-        
-
-let a = document.getElementById("login-button").addEventListener("click",test);
+}
+let a = document.getElementById("login-button").addEventListener("click",Check);
 

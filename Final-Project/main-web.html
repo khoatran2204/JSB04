@@ -12,77 +12,161 @@
 <body>
     <div class="header">
         <ul class="nav">
+            <li><a href="#slider"><i class="fa fa-home" aria-hidden="true" style="font-size: 25px; margin-top: 10px;"></i></a></li>
             <li><a href="#Transport">Vận chuyển</a></li>
             <li><a href="#Eating">Ăn uống</a></li>
             <li><a href="#Relax">Giải trí</a></li>
             <li><a href="#Apartment">Nơi ở</a></li>
+            <li><a href="#News">Tin tức</a></li>
         </ul>
-        <div class="login-signup">
-            <a href="login.html">login</a>
-            <p style="display: inline; color: azure;">/</p>
-            <a href="sign-up.html">sign up</a>
-        </div>
-        <div class="search">
-            <i class="fa fa-search" aria-hidden="true"></i>
-        </div>
-        <div class="search-input" id="search-icon">
-            <input type="text"  placeholder="Search" required name="Search">
-        </div>    
+        <div class="left">
+            <div class="login-signup">
+                <a href="login.html">login</a>
+                <p style="display: inline; color: azure;">/</p>
+                <a href="sign-up.html">sign up</a>
+            </div>
+            <div class="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="search-input" id="search-icon">
+                <input type="text"  placeholder=" Search" required name="Search">
+            </div>   
+        </div> 
     </div>
     
     <div class="body">
-        <div class="slider">
-            <img src="image/Huế.jpg" alt="" class="image">
-            <img src="image/Hội An.jpg" alt="" class="image">
-            <img src="image/Quảng bình.png" alt="" class="image">
-            <img src="image/Đà Nẵng.png" alt="" class="image">
-                <script>
-                    w3.slideshow(".image",3000)
-                </script>
-            </div>
-            <div class="box">
-                <div class="transbox">
+        
+        <div class="slider" id="Home">
+            <img src="image/Quảng bình.png" alt="" class="slides">
+            <img src="image/Đà Nẵng.png" alt="" class="slides">
+            <img src="image/Hội An.jpg" alt="" class="slides">
+            <img src="image/Huế.jpg" alt="" class="slides">
+            
+            <script>
+                w3.slideshow(".slides",1500)
+            </script>
+        </div>
+        
+        <div class="box">
+            <div class="transbox">
+                <div class="text">
+                    <p style="font-size: 50px; text-transform: uppercase; color: #311483;">Hè rồi du lịch thôi !!</p>
+                    <p style="font-size: 20px; color: #311483; margin-top: 25px;">Hè là phải đi chơi, chúng tôi đảm bảo sẽ tạo ra cho bạn một chuyến đi khác biệt, đẳng cấp chỉ có duy nhất ở Ktourist </p>
+                </div>
+                <div class="flip-card">
                     <div class="container-3d">
                         <div class="card">
-                            <div class="card-text front face" id="tphcm">
+                            <div class="face front" id="dalat">
+                                <h2 style="font-size: 20px; text-transform: uppercase; color: rgb(255, 255, 255); margin-top: 380px;">Thành phố Đà Lạt</h2>
+                                <p style="font-size: 18px; color: rgb(255, 255, 255); margin-top: 8px;">(Thành phố ngàn hoa)</p>
                             </div>
                             <div class="back face">
+                                <h2 style="font-size: 20px; text-transform: uppercase; color: rgb(255, 255, 255); margin-top: 190px;">Thành phố ngàn thông</h2>
+                                <p style="font-size: 14px; color: rgb(255, 255, 255); margin: 20px 15px 0px; text-align: center;">Là thành phố có khí hậu thông thoáng, yên bình, rất thích hợp cho việc nghỉ dưỡng và thư giãn</p>
                             </div>
                         </div>
                     </div>
                     <div class="container-3d">
                         <div class="card">
-                            <div class="card-text face front " id="dalat">
+                            <div class="front face" id="tphcm">
+                                <h2 style="font-size: 20px; text-transform: uppercase; color: rgb(255, 255, 255); margin-top: 60px;">Thành phố Hồ Chí Minh</h2>
+                                <p style="font-size: 18px; color: rgb(255, 255, 255); margin: 8px;">(Chợ Bến Thành)</p>
                             </div>
                             <div class="back face">
-                                <p>Hello</p>
+                                <h2 style="font-size: 20px; text-transform: uppercase; color: rgb(255, 255, 255); margin-top: 190px;">Trung tâm kinh tế</h2>
+                                <p style="font-size: 14px; color: rgb(255, 255, 255); margin: 20px 15px 0px; text-align: center;">Là thành phố nhộn nhịp, đầy đủ tiện nghi, dành cho những khách du lịch muốn khám phá thành phố hiện đại</p>
                             </div>
                         </div>
                     </div>
                     <div class="container-3d">
                         <div class="card">
-                            <div class="card-text front face" id="halong">
+                            <div class="front face" id="halong">
+                                <h2 style="font-size: 20px; text-transform: uppercase; color: rgb(255, 255, 255); margin-top: 380px">Thành phố Hạ Long</h2>
+                                <p style="font-size: 18px; color: rgb(255, 255, 255); margin-top: 8px;">(Vịnh Hạ Long)</p>
                             </div>
                             <div class="back face">
-    
+                                <h2 style="font-size: 20px; text-transform: uppercase; color: rgb(255, 255, 255); margin-top: 190px;">Di sản văn hóa thế giới</h2>
+                                <p style="font-size: 14px; color: rgb(255, 255, 255); margin: 20px 15px 0px; text-align: center;">Là một kì quan gồm hàng nghìn hòn đảo tạo nên phong cảnh thiên nhiên tuyệt đẹp dành cho những quý khách yêu mến thiên nhiên và cái đẹp</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="feedback">
-                <p class="section-heading">FEEDBACK</p>
-                <form action="" class="feedback-input">
-                    <input type="text" class="input-feedback" placeholder="Name" required name="Name">
-                    <input type="text" class="input-feedback" placeholder="Email" required name="Email">
-                    <input type="text" class="input-feedback" placeholder="Feedback" required name="Feedback">
-                </form>
-                <button class="button-feedback" id="feedback-button">Send</button>
+        </div>
+        <div class="ticket">
+            <div class="transbox" style="justify-content: center;">
+                <div>
+                    <h2 style="color: rgb(156, 0, 0); text-transform: uppercase; text-align: center; font-size: 30px;">Tour du lịch trong nước</h2>
+                    <p style="font-size: 20px; margin-top: 10px; margin-bottom: 50px; text-transform: uppercase; color: red;">Không nơi nào bằng quê nhà</p>
+                </div>
+                <div class="row">
+                    <div class="t-box">
+                        <div class="ticket-image" style="background-image: url(image/miền-tây.jpg);">
+            
+                        </div>
+                        <div class="ticket-text">
+                            <h4>Du lịch miền Tây 8N</h4>
+                            <p>Trải nghiệm văn hóa sông nước</p>
+                        </div>
+                    </div>
+                    <div class="t-box">
+                        <div class="ticket-image" style="background-image: url(image/miền-trung.jpg);">
+                            
+                        </div>
+                        <div class="ticket-text">
+                            <h4>Du lịch miền Trung 8N</h4>
+                            <p>Trải nghiệm biển và lịch sử, văn hóa</p>
+                        </div>
+                    </div>
+                    <div class="t-box">
+                        <div class="ticket-image" style="background-image: url(image/miền-bắc.jpg);">
+                            
+                        </div>
+                        <div class="ticket-text">
+                            <h4>du lịch miền Bắc 8N</h4>
+                            <p>Trải nghiệm thiên nhiên hùng vĩ, lịch sử lâu đời</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer">
-    </div>
-    
-    </div>
+        </div>
+        <div class="about-us">
+            <h2 class="tittle">Tại sao nên đặt chỗ ở Ktourist</h2>
+            <div class="reason">
+                <div class="list">
+                    <img src="image/1.webp" alt="">
+                    <h3>Giải pháp du lịch hoàn thiện</h3>
+                    <p>Giải pháp toàn diện - giúp bạn tìm chuyến bay và khách sạn khắp Việt Nam và Đông Nam Á một cách tiết kiệm.</p>
+                </div>
+                <div class="list">
+                    <img src="image/2.webp" alt="">
+                    <h3>Giá rẻ mỗi ngày</h3>
+                    <p>Giá bạn thấy là giá bạn trả! Dễ dàng so sánh khi không cần phải trả thêm chi phí ẩn! </p>
+                </div>
+                <div class="list">
+                    <img src="image/3.webp" alt="">
+                    <h3>Phương thức thanh toán an toàn và linh hoạt</h3>
+                    <p>Giao dịch trực tuyến an toàn với nhiều lựa chọn như thanh toán tại cửa hàng tiện lợi, chuyển khoản ngân hàng, thẻ tín dụng đến Internet Banking. Không tính phí giao dịch. </p>
+                </div>
+                <div class="list">
+                    <img src="image/4.webp" alt="">
+                    <h3>Hỗ trợ khách hàng 24/7</h3>
+                    <p>Đội ngũ nhân viên hỗ trợ khách hàng luôn sẵn sàng giúp đỡ bạn trong từng bước của quá trình đặt vé</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="feedback">
+            <p class="section-heading">FEEDBACK</p>
+            <form action="" class="feedback-input">
+                <input type="text" class="input-feedback" placeholder="Name" required name="Name">
+                <input type="text" class="input-feedback" placeholder="Email" required name="Email">
+                <input type="text" class="input-feedback" placeholder="Feedback" required name="Feedback">
+            </form>
+            <button class="button-feedback" id="feedback-button">Send</button>
+        </div>
+        <div class="footer"></div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
