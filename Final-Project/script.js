@@ -8,15 +8,18 @@ function CheckInfo() {
     if (username.value == "" || username.value == null || pv.value == "" || pv.value == null){
         alert("Bạn cần điền tất cả các mục")
     }
-else if (username.value != usernameright || pv.value != passwordright ){
+    else if (username.value != usernameright || pv.value != passwordright ){
         alert("Sai email hoặc password")
     }
+    else if(username.value == usernameright && pv.value == passwordright){
+        alert("Thanh cong")
+    } 
 }
 
 function Check(){
     if(username.value == usernameright && pv.value == passwordright){
-        window.location.replace(main-web.html)
+        alert
     } 
 }
-let a = document.getElementById("login-button").addEventListener("click",Check);
+let a = document.getElementById("login-button").addEventListener("click",CheckInfo);
 

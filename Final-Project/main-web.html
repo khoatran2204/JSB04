@@ -12,12 +12,12 @@
 <body>
     <div class="header">
         <ul class="nav">
-            <li><a href="#slider"><i class="fa fa-home" aria-hidden="true" style="font-size: 25px; margin-top: 10px;"></i></a></li>
-            <li><a href="#Transport">Vận chuyển</a></li>
-            <li><a href="#Eating">Ăn uống</a></li>
-            <li><a href="#Relax">Giải trí</a></li>
-            <li><a href="#Apartment">Nơi ở</a></li>
+            <li><a href="#Home"><i class="fa fa-home" aria-hidden="true" style="font-size: 25px; margin-top: 10px;"></i></a></li>
+            <li><a href="#Place">Điểm đến</a></li>
+            <li><a href="#Tour">Tour</a></li>
             <li><a href="#News">Tin tức</a></li>
+            <li><a href="#About-us">About us</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
         <div class="left">
             <div class="login-signup">
@@ -29,25 +29,21 @@
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
             <div class="search-input" id="search-icon">
-                <input type="text"  placeholder=" Search" required name="Search">
+                <input class="s-text" type="text"  placeholder="Search" required name="Search">
             </div>   
         </div> 
     </div>
-    
     <div class="body">
-        
         <div class="slider" id="Home">
-            <img src="image/Quảng bình.png" alt="" class="slides">
-            <img src="image/Đà Nẵng.png" alt="" class="slides">
-            <img src="image/Hội An.jpg" alt="" class="slides">
-            <img src="image/Huế.jpg" alt="" class="slides">
-            
+            <div class="slides" style="background-image: url(image/Quảng\ bình.png);"></div>
+            <div class="slides" style="background-image: url(image/Hội\ An.jpg);"></div>
+            <div class="slides" style="background-image: url(image/Đà\ Nẵng.png);"></div>
+            <div class="slides" style="background-image: url(image/Huế.jpg);"></div>
             <script>
                 w3.slideshow(".slides",1500)
             </script>
         </div>
-        
-        <div class="box">
+        <div class="box" id="Place">
             <div class="transbox">
                 <div class="text">
                     <p style="font-size: 50px; text-transform: uppercase; color: #311483;">Hè rồi du lịch thôi !!</p>
@@ -63,6 +59,7 @@
                             <div class="back face">
                                 <h2 style="font-size: 20px; text-transform: uppercase; color: rgb(255, 255, 255); margin-top: 190px;">Thành phố ngàn thông</h2>
                                 <p style="font-size: 14px; color: rgb(255, 255, 255); margin: 20px 15px 0px; text-align: center;">Là thành phố có khí hậu thông thoáng, yên bình, rất thích hợp cho việc nghỉ dưỡng và thư giãn</p>
+                                <button class="c-button"><a class="c-text" href="">Xem thêm</a></button>
                             </div>
                         </div>
                     </div>
@@ -75,6 +72,7 @@
                             <div class="back face">
                                 <h2 style="font-size: 20px; text-transform: uppercase; color: rgb(255, 255, 255); margin-top: 190px;">Trung tâm kinh tế</h2>
                                 <p style="font-size: 14px; color: rgb(255, 255, 255); margin: 20px 15px 0px; text-align: center;">Là thành phố nhộn nhịp, đầy đủ tiện nghi, dành cho những khách du lịch muốn khám phá thành phố hiện đại</p>
+                                <button class="c-button"><a class="c-text" href="">Xem thêm</a></button>
                             </div>
                         </div>
                     </div>
@@ -87,13 +85,14 @@
                             <div class="back face">
                                 <h2 style="font-size: 20px; text-transform: uppercase; color: rgb(255, 255, 255); margin-top: 190px;">Di sản văn hóa thế giới</h2>
                                 <p style="font-size: 14px; color: rgb(255, 255, 255); margin: 20px 15px 0px; text-align: center;">Là một kì quan gồm hàng nghìn hòn đảo tạo nên phong cảnh thiên nhiên tuyệt đẹp dành cho những quý khách yêu mến thiên nhiên và cái đẹp</p>
+                                <button class="c-button"><a  class="c-text" href="">Xem thêm</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="ticket">
+        <div class="ticket" id="Tour">
             <div class="transbox" style="justify-content: center;">
                 <div>
                     <h2 style="color: rgb(156, 0, 0); text-transform: uppercase; text-align: center; font-size: 30px;">Tour du lịch trong nước</h2>
@@ -101,8 +100,10 @@
                 </div>
                 <div class="row">
                     <div class="t-box">
-                        <div class="ticket-image" style="background-image: url(image/miền-tây.jpg);">
-            
+                        <div class="ticket-box">
+                            <div class="ticket-image" style="background-image: url(image/miền-tây.jpg);">
+                                <p></p>
+                            </div>
                         </div>
                         <div class="ticket-text">
                             <h4>Du lịch miền Tây 8N</h4>
@@ -110,8 +111,10 @@
                         </div>
                     </div>
                     <div class="t-box">
-                        <div class="ticket-image" style="background-image: url(image/miền-trung.jpg);">
-                            
+                        <div class="ticket-box">
+                            <div class="ticket-image" style="background-image: url(image/miền-trung.jpg);">
+                                <p></p>   
+                            </div>
                         </div>
                         <div class="ticket-text">
                             <h4>Du lịch miền Trung 8N</h4>
@@ -119,8 +122,10 @@
                         </div>
                     </div>
                     <div class="t-box">
-                        <div class="ticket-image" style="background-image: url(image/miền-bắc.jpg);">
-                            
+                        <div class="ticket-box">
+                            <div class="ticket-image" style="background-image: url(image/miền-bắc.jpg);">
+                                <p></p>
+                            </div>
                         </div>
                         <div class="ticket-text">
                             <h4>du lịch miền Bắc 8N</h4>
@@ -130,7 +135,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-us">
+        <div class="about-us" id="About-us">
             <h2 class="tittle">Tại sao nên đặt chỗ ở Ktourist</h2>
             <div class="reason">
                 <div class="list">
@@ -155,8 +160,7 @@
                 </div>
             </div>
         </div>
-        
-        <div class="feedback">
+        <div class="feedback" id="Contact">
             <p class="section-heading">FEEDBACK</p>
             <form action="" class="feedback-input">
                 <input type="text" class="input-feedback" placeholder="Name" required name="Name">
@@ -165,8 +169,28 @@
             </form>
             <button class="button-feedback" id="feedback-button">Send</button>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <div>
+                <a class="icon" href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a class="icon" href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a class="icon" href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+            </div>
+            <div>
+                <a class="icon footer-text" href="">Info</a>
+                <a class="icon footer-text" href="">Suport</a>
+                <a class="icon footer-text" href="">Marketing</a>
+            </div>
+            <div>
+                <a class="icon footer-text" href="">Term of use</a>
+                <a class="icon footer-text" href="">Privacy Policy</a>
+            </div>
+            <div>
+                <i class="fa fa-copyright icon" aria-hidden="true"></i>
+                <p class="icon footer-text">Copyright</p>
+            </div>
         </div>
+    </div>
+        
     <script src="script.js"></script>
 </body>
 </html>
