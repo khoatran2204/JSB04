@@ -16,10 +16,5 @@ function CheckInfo() {
     } 
 }
 
-function Check(){
-    if(username.value == usernameright && pv.value == passwordright){
-        alert
-    } 
-}
 let a = document.getElementById("login-button").addEventListener("click",CheckInfo);
 

@@ -275,7 +275,6 @@ html {
     cursor: pointer;
     display: inline-block;
     transform-style: preserve-3d;
-    transform: translateZ(0.01px);  
     transition: transform 1s ease-in-out;
 }
 
@@ -298,12 +297,14 @@ html {
     width: 350px;
     height: 500px;
     border-radius: 15px;
+    transform: translateZ(0.01px);  
 }
  
 .face{
     width: 350px;
     height: 500px;
     backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 
 .back {
@@ -313,6 +314,13 @@ html {
     width: 350px;
     height: 500px;
     border-radius: 15px;
+}
+.front-page{
+    transform: translateZ(50px);  
+}
+
+.back-page{
+    transform: translateZ(50px);  
 }
 
 .c-text{
@@ -337,8 +345,8 @@ html {
     background-image: url(image/tphcm_.jpeg) ;
 }
 
-#halong{
-    background-image: url(image/Halong.jpg) ;
+#hanoi{
+    background-image: url(image/HaNoi.webp) ;
 }
 
 #dalat{
@@ -384,12 +392,25 @@ html {
     background-blend-mode: darken, luminosity;
     -moz-transition: all .5s;
     -webkit-transition: all .5s;
-    transition: all .5s;
+    transition: all .8s;
 }
 
 .ticket-image:hover{
     background-size: 150% 150%;
     background-color: #585d61d2;
+}
+
+#mientay{
+    background-image: url(image/miền-tây.jpg);
+}
+
+
+#mientrung{
+    background-image: url(image/miền-trung.jpg);
+}
+
+#mienbac{
+    background-image: url(image/miền-bắc.jpg);
 }
 
 
@@ -510,4 +531,95 @@ html {
 .footer-text{
     font-size: 15px;
     text-decoration: none
+}
+
+
+.place{
+    display: flex;
+    padding: 40px 180px;
+    flex-direction: column;
+}
+
+.place-tittle{
+    font-weight: 100;
+}
+
+
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.place-write{
+    margin: 30px 0px;
+    width: 700px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.first-text{
+    margin: 10px 0px;
+}
+
+.index{
+    background-color: rgb(212, 212, 212);
+    border: 0.1px solid rgb(107, 107, 107);
+    width: 100%;
+    height: fit-content;
+    padding: 15px 0px;
+    margin: 30px 0px;
+    width: 100%;
+}
+
+.index ol div{
+    margin: 2px 0px;
+}
+
+.index-text{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.index div{
+    display: flex;
+    flex-direction: row;
+}
+
+.index p{
+    width: 30px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.info{
+    padding: 20px 0px;
+}
+
+.info div{
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info ul{
+    margin: 10px 30px;
+}
+
+.info ul li{
+    font-size: 14px;
+    margin: 2px;
+}
+
+.info div p{
+    margin-bottom: 20px;
+}
+
+.info img{
+    margin-bottom: 20px;
+    width: 100%;
 }
